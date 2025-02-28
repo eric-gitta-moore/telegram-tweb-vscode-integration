@@ -18,11 +18,22 @@
 
 const injectCss = `
 :root, #column-center .chats-container.tabs-container .tabs-tab {
---primary-color: #333 !important;
---message-out-background-color: #333 !important;
---primary-text-color: #666 !important;
+    --primary-color: #333 !important;
+    --message-out-background-color: #333 !important;
+    --primary-text-color: #666 !important;
+    --dark-primary-color: black !important;
 
---find-me: #ff11ff;
+    --find-me: #ff11ff;
+}
+
+@media only screen and (max-width: 600px) {
+    .sidebar-header.topbar.has-avatar {
+        display: none;
+    }
+}
+
+input, [contenteditable=true] {
+    caret-color: white !important;
 }
 `
 
