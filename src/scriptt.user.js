@@ -35,6 +35,10 @@ const injectCss = `
 input, [contenteditable=true] {
     caret-color: white !important;
 }
+
+.chat-input .btn-send {
+    color: #5c5c5c !important;
+}
 `
 
 GM_addStyle(injectCss)
