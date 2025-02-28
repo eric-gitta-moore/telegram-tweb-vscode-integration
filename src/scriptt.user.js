@@ -43,6 +43,19 @@ input, [contenteditable=true] {
 .bubble-hover-reaction {
     display: none;
 }
+
+button.btn-icon.toggle-emoticons {
+    display: none;
+}
 `
 
 GM_addStyle(injectCss)
+
+setInterval( () => {
+    const placeholder = document.querySelector('.input-field-placeholder')
+    if (!placeholder)
+        return;
+    placeholder.textContent = 'Ask anything (⌘L), @ to mention, ⇅ to select'
+}
+, 1000)
+
