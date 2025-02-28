@@ -40,7 +40,7 @@ input, [contenteditable=true] {
     color: #5c5c5c !important;
 }
 
-.bubble-hover-reaction.is-visible {
+.bubble-hover-reaction {
     display: none;
 }
 `
