@@ -39,6 +39,10 @@ input, [contenteditable=true] {
 .chat-input .btn-send {
     color: #5c5c5c !important;
 }
+
+.bubble-hover-reaction.is-visible {
+    display: none;
+}
 `
 
 GM_addStyle(injectCss)
