@@ -55,7 +55,7 @@ button.btn-icon.toggle-emoticons {
     }
 }
 html {
-    background: #1e1e1e;
+    background: #252526;
 }
 `
 
