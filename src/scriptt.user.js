@@ -38,6 +38,7 @@ input, [contenteditable=true] {
 
 .chat-input .btn-send {
     color: #5c5c5c !important;
+    display: none;
 }
 
 .bubble-hover-reaction {
@@ -46,6 +47,15 @@ input, [contenteditable=true] {
 
 button.btn-icon.toggle-emoticons {
     display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .rows-wrapper.chat-input-wrapper.chat-input-main-wrapper.chat-rows-wrapper {
+        width: 100%;
+    }
+}
+html {
+    background: #1e1e1e;
 }
 `
 
@@ -58,4 +68,14 @@ setInterval( () => {
     placeholder.textContent = 'Ask anything (⌘L), @ to mention, ⇅ to select'
 }
 , 1000)
+
+const viewport = document.body
+document.addEventListener('mouseenter', function() {
+    viewport.style.opacity = 1
+    console.log('mouseenter')
+})
+document.addEventListener('mouseleave',function(){
+    viewport.style.opacity = 0
+    console.log('mouseleave')
+})
 
