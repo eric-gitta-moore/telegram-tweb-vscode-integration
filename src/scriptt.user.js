@@ -22,7 +22,7 @@ const injectCss = `
     --message-out-background-color: #333 !important;
     --primary-text-color: #666 !important;
     --dark-primary-color: black !important;
-
+    --message-highlighting-color: black !important;
     --find-me: #ff11ff;
 }
 
